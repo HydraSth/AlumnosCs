@@ -1,0 +1,26 @@
+TRABAJO PRACTICO EVALUADOR NRO. 1
+==================================
+
+1) DATOS: Archivo en formato Excel con el nombre Inscripciones.xlsx, cuenta con las columnas
+          numero inscripcion, nombre alumno, edad del alumno, grado al que va a cursar y 
+          escuela donde prefiere cursar si hay vacantes. 
+
+          Tres archivos en formato Excel con los nombres Colegio_Toay.xlsx, Colegio_SantaRosa.xlsx
+          y Colegio_Anguil.xlsx que se corresponden respectivamente a los colegios de educacion
+          primaria Colegio Nro.1 "Toay", Colegio Nro.2 "Santa Rosa" y Colegio Nro.3 "Anguil" que
+          cuentan con las columnas grado a cursar y vacantes disponibles para ese nivel en esa escuela
+   
+          Archivo en formato notebook google colab denominado Generar_Excel_Inscripciones.ipynb utilizado
+          para generar los archivos excel
+
+2) CONSIGNAS: Se debera codificar un proyecto en c# tipo consola que asigne cada solicitud de inscripcion
+              existente en el archivo Inscripciones.xlsx al grado correspondiente en alguna de los 3 colegios
+              existentes "Colegio_toay", "Colegio_SantaRosa" y "Colegio_Anguil", respetando la preferencia
+              de colegio solicitado por cada alumno en la columna "preferencia" del archivo Inscripciones si
+              existe vacante en ese colegio.
+
+3) ARCHIVOS A GENERAR: Al finalizar la ejecucion del proyecto se deberan crear 3 archivos en formato Excel
+                       con los nombres Vacantes_ColegioToay.xlsx, Vacantes_ColegioSantaRosa.xlsx y 
+                       Vacantes_ColegioAnguil.xlsx que deberan tener las siguientes columnas nro_inscripcion,
+                       nombre, edad, grado. Las mismas deberan rellenarse con los datos de los alumnos
+                       inscriptos        
