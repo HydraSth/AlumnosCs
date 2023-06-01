@@ -1,4 +1,0 @@
-// namespace AniadirPersonas
-// {
-//     public class    
-// }
