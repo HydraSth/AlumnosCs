@@ -25,6 +25,21 @@ Escuela Escuela_Toay = Escuela.RecopilarDatos("Toay");
 SLDocument VacantesToay = Escuela.CrearVacantes();
 SLDocument VacantesSRosa = Escuela.CrearVacantes();
 SLDocument VacantesAnguil = Escuela.CrearVacantes();
+// int vacx=0;
+// foreach(var vacante in Escuela_Toay.vacantes){
+//     vacx+=vacante;
+// }
+// System.Console.WriteLine($"Las vacantes de Toay son {vacx}");
+// vacx=0;
+// foreach(var vacante in Escuela_SRosa.vacantes){
+//     vacx+=vacante;
+// }
+// System.Console.WriteLine($"Las vacantes de SRosa son {vacx}");
+// vacx=0;
+// foreach(var vacante in Escuela_Anguil.vacantes){
+//     vacx+=vacante;
+// }
+// System.Console.WriteLine($"Las vacantes de Anguil son {vacx}");
 
 SLDocument VacantesListaDeEspera = Escuela.CrearVacantes();
 int indiceError = 2;
@@ -120,7 +135,7 @@ foreach (var alumno in AlumnosEnListaDeEspera)
     }
 }
 
-//Chequeo para mostrar las vacantes
+// Chequeo para mostrar las vacantes
 // for (int i = 0; i < 8; i++){
 //     System.Console.WriteLine($"A la escuela santa rosa grado {Escuela_SRosa.grado[i]} le quedan {Escuela_SRosa.vacantes[i]}");
 //     System.Console.WriteLine($"A la escuela toay grado {Escuela_Toay.grado[i]} le quedan {Escuela_Toay.vacantes[i]}");
