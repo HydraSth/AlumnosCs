@@ -1,149 +1,37 @@
 ﻿using SpreadsheetLight;
 using CrearAlumno;
 using CrearEscuela;
+using Funcs;
+using Spectre.Console;
 
-string doc_incripcione = @"C:\Users\Usuario\Desktop\Evaluativo_Practica\DATA\Inscripciones.xlsx";
-SLDocument incripciones = new SLDocument(doc_incripcione);
-List<Alumno> Alumnos = new List<Alumno>();
 
-int fila = 2;
-while (!string.IsNullOrEmpty(incripciones.GetCellValueAsString(fila, 1)))
+
+Functions funciones = new Functions();
+
+bool bandera = true;
+while (bandera)
 {
-    int id = incripciones.GetCellValueAsInt32(fila, 1);
-    string nombre = incripciones.GetCellValueAsString(fila, 2);
-    int edad = incripciones.GetCellValueAsInt32(fila, 3);
-    int grado = incripciones.GetCellValueAsInt32(fila, 4);
-    string preferencia = incripciones.GetCellValueAsString(fila, 5);
-    Alumnos.Add(new Alumno(id, nombre, edad, grado, preferencia));
-    fila++;
-}
-
-Escuela Escuela_SRosa = Escuela.RecopilarDatos("SantaRosa");
-Escuela Escuela_Anguil = Escuela.RecopilarDatos("Anguil");
-Escuela Escuela_Toay = Escuela.RecopilarDatos("Toay");
-
-SLDocument VacantesToay = Escuela.CrearVacantes();
-SLDocument VacantesSRosa = Escuela.CrearVacantes();
-SLDocument VacantesAnguil = Escuela.CrearVacantes();
-// int vacx=0;
-// foreach(var vacante in Escuela_Toay.vacantes){
-//     vacx+=vacante;
-// }
-// System.Console.WriteLine($"Las vacantes de Toay son {vacx}");
-// vacx=0;
-// foreach(var vacante in Escuela_SRosa.vacantes){
-//     vacx+=vacante;
-// }
-// System.Console.WriteLine($"Las vacantes de SRosa son {vacx}");
-// vacx=0;
-// foreach(var vacante in Escuela_Anguil.vacantes){
-//     vacx+=vacante;
-// }
-// System.Console.WriteLine($"Las vacantes de Anguil son {vacx}");
-
-SLDocument VacantesListaDeEspera = Escuela.CrearVacantes();
-int indiceError = 2;
-foreach (var alumno in Alumnos)
-{
-    switch (alumno.preferencia)
+    AnsiConsole.Background = ConsoleColor.Yellow;
+    AnsiConsole.Foreground = ConsoleColor.Red;
+    AnsiConsole.WriteLine("PROGRAMA DE ADMINISTRADOR DE EMPLEADOS");
+    AnsiConsole.WriteLine("=======================================");
+    AnsiConsole.WriteLine();
+    AnsiConsole.Reset();
+    var menu = AnsiConsole.Prompt(new SelectionPrompt<String>().Title("[green]ELIJAN UNA OPCION[/]")
+            .AddChoices(new string[] { "HACER GESTION","VER VACANTES","GUARDAR VACANTES", "SALIR" }));
+    switch (menu)
     {
-        case "Nro. 1 - Toay":
-            var respuesta_vacante = Escuela_Toay.datosActualizado(alumno, VacantesToay, Escuela_Toay, VacantesListaDeEspera, indiceError);
-            if (respuesta_vacante.Item2)
-            {
-                VacantesToay = respuesta_vacante.Item1;
-            }
-            else
-            {
-                VacantesListaDeEspera = respuesta_vacante.Item1;
-                indiceError++;
-            }
+        case "HACER GESTION":
+            funciones.GestionarInscripciones();
             break;
-        case "Nro. 2 - Santa Rosa":
-            respuesta_vacante = Escuela_SRosa.datosActualizado(alumno, VacantesSRosa, Escuela_SRosa, VacantesListaDeEspera, indiceError);
-            if (respuesta_vacante.Item2)
-            {
-                VacantesSRosa = respuesta_vacante.Item1;
-            }
-            else
-            {
-                VacantesListaDeEspera = respuesta_vacante.Item1;
-                indiceError++;
-            }
+        case "VER VACANTES":
+            funciones.VerVacantes();
             break;
-        case "Nro. 3 - Anguil":
-            respuesta_vacante = Escuela_Anguil.datosActualizado(alumno, VacantesAnguil, Escuela_Anguil, VacantesListaDeEspera, indiceError);
-            if (respuesta_vacante.Item2)
-            {
-                VacantesAnguil = respuesta_vacante.Item1;
-            }
-            else
-            {
-                VacantesListaDeEspera = respuesta_vacante.Item1;
-                indiceError++;
-            }
+        case "GUARDAR VACANTES":
+            funciones.GuardarDocumentos();
+            break;
+        case "SALIR":
+            bandera = false;
             break;
     }
 }
-
-List<Alumno> AlumnosEnListaDeEspera = new List<Alumno>();
-fila = 2;
-while (!string.IsNullOrEmpty(VacantesListaDeEspera.GetCellValueAsString(fila, 1)))
-{
-    int id = VacantesListaDeEspera.GetCellValueAsInt32(fila, 1);
-    string nombre = VacantesListaDeEspera.GetCellValueAsString(fila, 2);
-    int edad = VacantesListaDeEspera.GetCellValueAsInt32(fila, 3);
-    int grado = VacantesListaDeEspera.GetCellValueAsInt32(fila, 4);
-    string preferencia = "x";
-    AlumnosEnListaDeEspera.Add(new Alumno(id, nombre, edad, grado, preferencia));
-    fila++;
-}
-
-VacantesListaDeEspera = Escuela.CrearVacantes();
-indiceError = 2;
-foreach (var alumno in AlumnosEnListaDeEspera)
-{
-    //Prueba con escuela Toay
-    var respuesta_vacante = Escuela_Toay.datosActualizado(alumno, VacantesToay, Escuela_Toay, VacantesListaDeEspera, indiceError);
-    if (respuesta_vacante.Item2)
-    {
-        VacantesToay = respuesta_vacante.Item1;
-    }
-    else
-    {
-        //Prueba con escuela Anguil
-        respuesta_vacante = Escuela_Anguil.datosActualizado(alumno, VacantesAnguil, Escuela_Anguil, VacantesListaDeEspera, indiceError);
-        if (respuesta_vacante.Item2)
-        {
-            VacantesAnguil = respuesta_vacante.Item1;
-        }
-        else
-        {
-            //Prueba con escuela Santa Rosa
-            respuesta_vacante = Escuela_Toay.datosActualizado(alumno, VacantesToay, Escuela_Toay, VacantesListaDeEspera, indiceError);
-            if (respuesta_vacante.Item2)
-            {
-                VacantesToay = respuesta_vacante.Item1;
-            }
-            else
-            {
-                //No pudo ser ingresado en ningun colegio queda en lista de espera
-                VacantesListaDeEspera = respuesta_vacante.Item1;
-                indiceError++;
-            }
-        }
-    }
-}
-
-// Chequeo para mostrar las vacantes
-// for (int i = 0; i < 8; i++){
-//     System.Console.WriteLine($"A la escuela santa rosa grado {Escuela_SRosa.grado[i]} le quedan {Escuela_SRosa.vacantes[i]}");
-//     System.Console.WriteLine($"A la escuela toay grado {Escuela_Toay.grado[i]} le quedan {Escuela_Toay.vacantes[i]}");
-//     System.Console.WriteLine($"A la escuela anguil grado {Escuela_Anguil.grado[i]} le quedan {Escuela_Anguil.vacantes[i]}");
-// }
-
-VacantesToay.SaveAs(@"C:\Users\Usuario\Desktop\Evaluativo_Practica\Vacantes\Vacantes_ColegioToay.xlsx");
-VacantesSRosa.SaveAs(@"C:\Users\Usuario\Desktop\Evaluativo_Practica\Vacantes\Vacantes_ColegioSRosa.xlsx");
-VacantesAnguil.SaveAs(@"C:\Users\Usuario\Desktop\Evaluativo_Practica\Vacantes\Vacantes_ColegioAnguil.xlsx");
-
-VacantesListaDeEspera.SaveAs(@"C:\Users\Usuario\Desktop\Evaluativo_Practica\Vacantes\Error\VacantesListaDeEspera.xlsx");

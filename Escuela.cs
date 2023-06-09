@@ -5,10 +5,12 @@ namespace CrearEscuela
 {
     public class Escuela
     {
+        public string? nombre {get;set;}
         public List<int> grado = new List<int> { 0 };
         public List<int> vacantes = new List<int> { 0 };
-        public int indice = 2;
-
+        public Escuela(string nombre){
+            this.nombre = nombre;
+        }
         public static SLDocument CrearVacantes()
         {
             SLDocument XLSX = new SLDocument();
@@ -20,8 +22,8 @@ namespace CrearEscuela
         }
         public static Escuela RecopilarDatos(string Nombre)
         {
-            Escuela Escuela_X = new Escuela();
-            string doc_toay = @$"C:\Users\Usuario\Desktop\Evaluativo_Practica\DATA\Colegio_{Nombre}.xlsx";
+            Escuela Escuela_X = new Escuela(Nombre);
+            string doc_toay = @$"DATA\Colegio_{Nombre}.xlsx";
             SLDocument xls_toay = new SLDocument(doc_toay);
             int fila = 2;
             while (!string.IsNullOrEmpty(xls_toay.GetCellValueAsString(fila, 1)))
@@ -47,6 +49,7 @@ namespace CrearEscuela
             }
             return false;
         }
+        public int indice = 2;
         public Tuple<SLDocument, bool> datosActualizado(Alumno obj_alumno, SLDocument archivo, Escuela escuela, SLDocument error, int ierror)
         {
             if (archivo?.GetCellValueAsInt32(indice, 1) != null)

@@ -23,3 +23,54 @@ C:\Users\Usuario\Desktop\Evaluativo_Practica\obj\Debug\net7.0\refint\Evaluativo_
 C:\Users\Usuario\Desktop\Evaluativo_Practica\obj\Debug\net7.0\Evaluativo_Practica.pdb
 C:\Users\Usuario\Desktop\Evaluativo_Practica\obj\Debug\net7.0\Evaluativo_Practica.genruntimeconfig.cache
 C:\Users\Usuario\Desktop\Evaluativo_Practica\obj\Debug\net7.0\ref\Evaluativo_Practica.dll
+C:\Users\Usuario\Desktop\AlumnosCs-main\AlumnosCs-main\bin\Debug\net7.0\Evaluativo_Practica.exe
+C:\Users\Usuario\Desktop\AlumnosCs-main\AlumnosCs-main\bin\Debug\net7.0\Evaluativo_Practica.deps.json
+C:\Users\Usuario\Desktop\AlumnosCs-main\AlumnosCs-main\bin\Debug\net7.0\Evaluativo_Practica.runtimeconfig.json
+C:\Users\Usuario\Desktop\AlumnosCs-main\AlumnosCs-main\bin\Debug\net7.0\Evaluativo_Practica.dll
+C:\Users\Usuario\Desktop\AlumnosCs-main\AlumnosCs-main\bin\Debug\net7.0\Evaluativo_Practica.pdb
+C:\Users\Usuario\Desktop\AlumnosCs-main\AlumnosCs-main\bin\Debug\net7.0\DocumentFormat.OpenXml.dll
+C:\Users\Usuario\Desktop\AlumnosCs-main\AlumnosCs-main\bin\Debug\net7.0\FluentValidation.dll
+C:\Users\Usuario\Desktop\AlumnosCs-main\AlumnosCs-main\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Usuario\Desktop\AlumnosCs-main\AlumnosCs-main\bin\Debug\net7.0\SpreadsheetLight.dll
+C:\Users\Usuario\Desktop\AlumnosCs-main\AlumnosCs-main\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\Users\Usuario\Desktop\AlumnosCs-main\AlumnosCs-main\bin\Debug\net7.0\System.IO.Packaging.dll
+C:\Users\Usuario\Desktop\AlumnosCs-main\AlumnosCs-main\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Usuario\Desktop\AlumnosCs-main\AlumnosCs-main\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Usuario\Desktop\AlumnosCs-main\AlumnosCs-main\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Usuario\Desktop\AlumnosCs-main\AlumnosCs-main\obj\Debug\net7.0\Evaluativo_Practica.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\AlumnosCs-main\AlumnosCs-main\obj\Debug\net7.0\Evaluativo_Practica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\AlumnosCs-main\AlumnosCs-main\obj\Debug\net7.0\Evaluativo_Practica.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\AlumnosCs-main\AlumnosCs-main\obj\Debug\net7.0\Evaluativo_Practica.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\AlumnosCs-main\AlumnosCs-main\obj\Debug\net7.0\Evaluativo_Practica.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\AlumnosCs-main\AlumnosCs-main\obj\Debug\net7.0\Evaluativo_Practica.csproj.CopyComplete
+C:\Users\Usuario\Desktop\AlumnosCs-main\AlumnosCs-main\obj\Debug\net7.0\Evaluativo_Practica.dll
+C:\Users\Usuario\Desktop\AlumnosCs-main\AlumnosCs-main\obj\Debug\net7.0\refint\Evaluativo_Practica.dll
+C:\Users\Usuario\Desktop\AlumnosCs-main\AlumnosCs-main\obj\Debug\net7.0\Evaluativo_Practica.pdb
+C:\Users\Usuario\Desktop\AlumnosCs-main\AlumnosCs-main\obj\Debug\net7.0\Evaluativo_Practica.genruntimeconfig.cache
+C:\Users\Usuario\Desktop\AlumnosCs-main\AlumnosCs-main\obj\Debug\net7.0\ref\Evaluativo_Practica.dll
+C:\Users\Usuario\Desktop\Liceo 2023 - Cuatrimestre 1\Practica 1\Evaluativo_Practica\bin\Debug\net7.0\Evaluativo_Practica.exe
+C:\Users\Usuario\Desktop\Liceo 2023 - Cuatrimestre 1\Practica 1\Evaluativo_Practica\bin\Debug\net7.0\Evaluativo_Practica.deps.json
+C:\Users\Usuario\Desktop\Liceo 2023 - Cuatrimestre 1\Practica 1\Evaluativo_Practica\bin\Debug\net7.0\Evaluativo_Practica.runtimeconfig.json
+C:\Users\Usuario\Desktop\Liceo 2023 - Cuatrimestre 1\Practica 1\Evaluativo_Practica\bin\Debug\net7.0\Evaluativo_Practica.dll
+C:\Users\Usuario\Desktop\Liceo 2023 - Cuatrimestre 1\Practica 1\Evaluativo_Practica\bin\Debug\net7.0\Evaluativo_Practica.pdb
+C:\Users\Usuario\Desktop\Liceo 2023 - Cuatrimestre 1\Practica 1\Evaluativo_Practica\bin\Debug\net7.0\DocumentFormat.OpenXml.dll
+C:\Users\Usuario\Desktop\Liceo 2023 - Cuatrimestre 1\Practica 1\Evaluativo_Practica\bin\Debug\net7.0\FluentValidation.dll
+C:\Users\Usuario\Desktop\Liceo 2023 - Cuatrimestre 1\Practica 1\Evaluativo_Practica\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Usuario\Desktop\Liceo 2023 - Cuatrimestre 1\Practica 1\Evaluativo_Practica\bin\Debug\net7.0\SpreadsheetLight.dll
+C:\Users\Usuario\Desktop\Liceo 2023 - Cuatrimestre 1\Practica 1\Evaluativo_Practica\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\Users\Usuario\Desktop\Liceo 2023 - Cuatrimestre 1\Practica 1\Evaluativo_Practica\bin\Debug\net7.0\System.IO.Packaging.dll
+C:\Users\Usuario\Desktop\Liceo 2023 - Cuatrimestre 1\Practica 1\Evaluativo_Practica\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Usuario\Desktop\Liceo 2023 - Cuatrimestre 1\Practica 1\Evaluativo_Practica\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Usuario\Desktop\Liceo 2023 - Cuatrimestre 1\Practica 1\Evaluativo_Practica\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Usuario\Desktop\Liceo 2023 - Cuatrimestre 1\Practica 1\Evaluativo_Practica\obj\Debug\net7.0\Evaluativo_Practica.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\Liceo 2023 - Cuatrimestre 1\Practica 1\Evaluativo_Practica\obj\Debug\net7.0\Evaluativo_Practica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\Liceo 2023 - Cuatrimestre 1\Practica 1\Evaluativo_Practica\obj\Debug\net7.0\Evaluativo_Practica.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\Liceo 2023 - Cuatrimestre 1\Practica 1\Evaluativo_Practica\obj\Debug\net7.0\Evaluativo_Practica.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\Liceo 2023 - Cuatrimestre 1\Practica 1\Evaluativo_Practica\obj\Debug\net7.0\Evaluativo_Practica.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Liceo 2023 - Cuatrimestre 1\Practica 1\Evaluativo_Practica\obj\Debug\net7.0\Evaluativo_Practica.csproj.CopyComplete
+C:\Users\Usuario\Desktop\Liceo 2023 - Cuatrimestre 1\Practica 1\Evaluativo_Practica\obj\Debug\net7.0\Evaluativo_Practica.dll
+C:\Users\Usuario\Desktop\Liceo 2023 - Cuatrimestre 1\Practica 1\Evaluativo_Practica\obj\Debug\net7.0\refint\Evaluativo_Practica.dll
+C:\Users\Usuario\Desktop\Liceo 2023 - Cuatrimestre 1\Practica 1\Evaluativo_Practica\obj\Debug\net7.0\Evaluativo_Practica.pdb
+C:\Users\Usuario\Desktop\Liceo 2023 - Cuatrimestre 1\Practica 1\Evaluativo_Practica\obj\Debug\net7.0\Evaluativo_Practica.genruntimeconfig.cache
+C:\Users\Usuario\Desktop\Liceo 2023 - Cuatrimestre 1\Practica 1\Evaluativo_Practica\obj\Debug\net7.0\ref\Evaluativo_Practica.dll
+C:\Users\Usuario\Desktop\Liceo 2023 - Cuatrimestre 1\Practica 1\Evaluativo_Practica\bin\Debug\net7.0\Spectre.Console.dll
