@@ -122,6 +122,7 @@ namespace Funcs
                     }
                 }
             }
+            Mensaje("Exito");
         }
         public void VerVacantes()
         {
