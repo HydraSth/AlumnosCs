@@ -1,16 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "ZkMWjsuWgOnG2D6T2xEtMtOZsLX0FUvPKvtUYSdunp7sxiIh/cqugc+MNjgmwd+sHJx4FSmctOBZIpiLG6OWDQ==",
+  "dgSpecHash": "5MkTzx62zh4KS5LgnotmBF1x3niHwyOAnsNLu/1oVwUW/84ddYAgg97WI1wfXppUJKWZdV/MZoRexQjcCABVDA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\Desktop\\Evaluativo_Practica\\Evaluativo_Practica.csproj",
+  "projectFilePath": "C:\\Users\\Usuario\\Desktop\\Liceo 2023 - Cuatrimestre 1\\Practica 1\\Evaluativo_Practica\\Evaluativo_Practica.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\documentformat.openxml\\2.11.3\\documentformat.openxml.2.11.3.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\spectre.console\\0.47.0\\spectre.console.0.47.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\spreadsheetlight\\3.5.0\\spreadsheetlight.3.5.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\system.drawing.common\\5.0.0\\system.drawing.common.5.0.0.nupkg.sha512",
-    "C:\\Users\\Usuario\\.nuget\\packages\\system.io.packaging\\4.7.0\\system.io.packaging.4.7.0.nupkg.sha512"
+    "C:\\Users\\Usuario\\.nuget\\packages\\system.io.packaging\\4.7.0\\system.io.packaging.4.7.0.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512"
   ],
   "logs": []
 }

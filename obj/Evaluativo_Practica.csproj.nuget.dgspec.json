@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Desktop\\Evaluativo_Practica\\Evaluativo_Practica.csproj": {}
+    "C:\\Users\\Usuario\\Desktop\\Liceo 2023 - Cuatrimestre 1\\Practica 1\\Evaluativo_Practica\\Evaluativo_Practica.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Desktop\\Evaluativo_Practica\\Evaluativo_Practica.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\Liceo 2023 - Cuatrimestre 1\\Practica 1\\Evaluativo_Practica\\Evaluativo_Practica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Evaluativo_Practica\\Evaluativo_Practica.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Liceo 2023 - Cuatrimestre 1\\Practica 1\\Evaluativo_Practica\\Evaluativo_Practica.csproj",
         "projectName": "Evaluativo_Practica",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\Evaluativo_Practica\\Evaluativo_Practica.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\Liceo 2023 - Cuatrimestre 1\\Practica 1\\Evaluativo_Practica\\Evaluativo_Practica.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\Evaluativo_Practica\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\Liceo 2023 - Cuatrimestre 1\\Practica 1\\Evaluativo_Practica\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -41,6 +41,10 @@
             "FluentValidation": {
               "target": "Package",
               "version": "[11.5.2, )"
+            },
+            "Spectre.Console": {
+              "target": "Package",
+              "version": "[0.47.0, )"
             },
             "SpreadsheetLight": {
               "target": "Package",
