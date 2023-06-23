@@ -52,28 +52,36 @@ namespace CrearEscuela
         public int indice = 2;
         public Tuple<SLDocument, bool> datosActualizado(Alumno obj_alumno, SLDocument archivo, Escuela escuela, SLDocument error, int ierror)
         {
-            if (archivo?.GetCellValueAsInt32(indice, 1) != null)
+            try{
+                if (archivo?.GetCellValueAsInt32(indice, 1) != null)
+                {
+                    if (escuela.vacantes[obj_alumno.grado] > 0)
+                    {
+                        archivo.SetCellValue(indice, 1, obj_alumno.id);
+                        archivo.SetCellValue(indice, 2, obj_alumno.nombre);
+                        archivo.SetCellValue(indice, 3, obj_alumno.edad);
+                        archivo.SetCellValue(indice, 4, obj_alumno.grado);
+                        escuela.actualizarAlumnos(obj_alumno.grado);
+                        this.indice++;
+                        return Tuple.Create(archivo, true);
+                    }
+                    else
+                    {
+                        error.SetCellValue(ierror, 1, obj_alumno.id);
+                        error.SetCellValue(ierror, 2, obj_alumno.nombre);
+                        error.SetCellValue(ierror, 3, obj_alumno.edad);
+                        error.SetCellValue(ierror, 4, obj_alumno.grado);
+                    }
+                }
+                return Tuple.Create(error, false);
+            }
+            catch (Exception ex)
             {
-                if (escuela.vacantes[obj_alumno.grado] > 0)
-                {
-                    archivo.SetCellValue(indice, 1, obj_alumno.id);
-                    archivo.SetCellValue(indice, 2, obj_alumno.nombre);
-                    archivo.SetCellValue(indice, 3, obj_alumno.edad);
-                    archivo.SetCellValue(indice, 4, obj_alumno.grado);
-                    escuela.actualizarAlumnos(obj_alumno.grado);
-                    this.indice++;
-                    return Tuple.Create(archivo, true);
-                }
-                else
-                {
-                    error.SetCellValue(ierror, 1, obj_alumno.id);
-                    error.SetCellValue(ierror, 2, obj_alumno.nombre);
-                    error.SetCellValue(ierror, 3, obj_alumno.edad);
-                    error.SetCellValue(ierror, 4, obj_alumno.grado);
-                }
+                Console.WriteLine($"Ocurrió un error: {ex.Message}");
+                Console.WriteLine($"StackTrace: {ex.StackTrace}");
+            
             }
             return Tuple.Create(error, false);
         }
-
     }
 }

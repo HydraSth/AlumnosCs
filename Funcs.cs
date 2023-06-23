@@ -7,6 +7,7 @@ namespace Funcs
 {
     public class Functions
     {
+        bool HizoGestion= false;
         SLDocument incripciones = new SLDocument(@"DATA\Inscripciones.xlsx");
         List<Alumno> Alumnos = new List<Alumno>();
         Escuela Escuela_SRosa = Escuela.RecopilarDatos("SantaRosa");
@@ -122,6 +123,7 @@ namespace Funcs
                     }
                 }
             }
+            HizoGestion= true;
             Mensaje("Exito");
         }
         public void VerVacantes()
@@ -168,14 +170,20 @@ namespace Funcs
         }
         public void GuardarDocumentos()
         {
-            try{
-                VacantesToay.SaveAs(@"Vacantes\Vacantes_ColegioToay.xlsx");
-                VacantesSRosa.SaveAs(@"Vacantes\Vacantes_ColegioSRosa.xlsx");
-                VacantesAnguil.SaveAs(@"Vacantes\Vacantes_ColegioAnguil.xlsx");
-                VacantesListaDeEspera.SaveAs(@"Vacantes\Error\VacantesListaDeEspera.xlsx");                
-                Mensaje("Exito");
-            }catch{
+            if(HizoGestion){
+                try{
+                    VacantesToay.SaveAs(@"Vacantes\Vacantes_ColegioToay.xlsx");
+                    VacantesSRosa.SaveAs(@"Vacantes\Vacantes_ColegioSRosa.xlsx");
+                    VacantesAnguil.SaveAs(@"Vacantes\Vacantes_ColegioAnguil.xlsx");
+                    VacantesListaDeEspera.SaveAs(@"Vacantes\Error\VacantesListaDeEspera.xlsx");                
+                    Mensaje("Exito");
+                }catch{
+                    Mensaje("Error");
+                }
+            }else{
+                AnsiConsole.WriteLine("Debe hacer la gestion primero.");
                 Mensaje("Error");
+
             }
         }
     }
